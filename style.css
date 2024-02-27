@@ -95,3 +95,22 @@ nav {
   gap: 8px;
   padding: 2rem;
 }
+
+#search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 2em;
+}
+
+#search > input {
+  width: 50%;
+  border-radius: 8px;
+  background-color: var(--secondary-bg-color);
+  border: none;
+  height: 2em;
+}
+
+#search > svg {
+  height: 1.5em;
+}
