@@ -100,7 +100,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 0 2em;
+  padding: 1em 2em;
 }
 
 #search > input {
@@ -113,4 +113,23 @@ nav {
 
 #search > svg {
   height: 1.5em;
+}
+
+#user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+#user-profile > p {
+  font-weight: 700;
+}
+
+#bell-badge {
+  height: 2rem;
+}
+
+#profile-picture {
+  height: 2.5rem;
 }
