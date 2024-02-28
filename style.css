@@ -14,6 +14,13 @@
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -134,7 +141,8 @@ nav {
   height: 2.5rem;
 }
 
-#user-welcome-container {
+#user-welcome-container,
+#action-btns {
   display: flex;
   gap: 16px;
   padding: 0 2em;
@@ -152,4 +160,20 @@ nav {
 
 #greetings {
   font-weight: 700;
+}
+
+#action-btns > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.btn {
+  border-radius: 8px;
+  background-color: var(--main-color);
+  color: var(--alt-text-color);
+  font-size: 1em;
+  font-weight: 700;
+  padding: 12px 32px;
+  cursor: pointer;
 }
