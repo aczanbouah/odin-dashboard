@@ -77,10 +77,38 @@ main {
   grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  background-color: var(--secondary-bg-color);
 }
 
-#card {
+.card {
   height: 200px;
+  background-color: var(--alt-text-color);
+  border-radius: 4px;
+  border-left: 8px solid var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 2em;
+}
+
+.card-btns {
+  display: flex;
+  align-self: flex-end;
+  gap: 16px;
+}
+
+.card-btns > svg {
+  height: 2em;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.project-description {
+  color: var(--secondary-text-color);
 }
 
 nav {
@@ -97,8 +125,7 @@ nav {
 
 #cards-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 8px;
   padding: 2rem;
 }
