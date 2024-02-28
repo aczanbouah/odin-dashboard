@@ -133,3 +133,23 @@ nav {
 #profile-picture {
   height: 2.5rem;
 }
+
+#user-welcome-container {
+  display: flex;
+  gap: 16px;
+  padding: 0 2em;
+  align-items: center;
+}
+
+#profile-picture-welcome {
+  height: 3.5em;
+}
+
+#user-handle {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+#greetings {
+  font-weight: 700;
+}
