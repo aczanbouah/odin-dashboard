@@ -81,7 +81,6 @@ main {
 }
 
 .card {
-  height: 200px;
   background-color: var(--alt-text-color);
   border-radius: 4px;
   border-left: 8px solid var(--accent-color);
@@ -90,6 +89,7 @@ main {
   justify-content: center;
   gap: 8px;
   padding: 0 2em;
+  box-shadow: 0px 15px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .card-btns {
@@ -121,12 +121,15 @@ nav {
 
 #right-container {
   display: grid;
+  padding: 2rem 2rem 2rem 0;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
 }
 
 #cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 2rem;
   padding: 2rem;
 }
 
@@ -203,4 +206,55 @@ nav {
   font-weight: 700;
   padding: 12px 32px;
   cursor: pointer;
+}
+
+#announcements,
+#trending {
+  box-shadow: 0px 15px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: var(--alt-text-color);
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+#announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.announcement-title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.announcement-content {
+  color: var(--secondary-text-color);
+}
+
+.announcement-card {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+#trending {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.trending-person {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trending-title {
+  color: var(--secondary-text-color);
+}
+
+.trending-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
